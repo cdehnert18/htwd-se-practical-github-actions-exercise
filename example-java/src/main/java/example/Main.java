@@ -1,5 +1,8 @@
 package example;
 
+/*
+  Das ist ein Kommentar
+*/
 public class Main {
 
   public static void main(String[] args) {
