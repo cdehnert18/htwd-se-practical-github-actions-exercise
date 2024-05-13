@@ -12,6 +12,9 @@ public class Town {
   private int residents;
 
   public Town(String name, int residents) {
+    if(residents < 0) {
+      throw new IllegalArgumentException("Residents to small.");
+    }
     this.setName(name);
     this.setResidents(residents);
   }
@@ -31,6 +34,9 @@ public class Town {
   }
 
   public void setResidents(int residents) {
+    if(residents < 0) {
+      throw new IllegalArgumentException("Residents to small.");
+    }
     this.residents = residents;
   }
 
